@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4340B051C91558E008E7C0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4340B041C91558E008E7C0D /* AppDelegate.swift */; };
+		F4340B071C91558E008E7C0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4340B061C91558E008E7C0D /* ViewController.swift */; };
+		F4340B0A1C91558E008E7C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4340B081C91558E008E7C0D /* Main.storyboard */; };
+		F4340B0C1C91558E008E7C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4340B0B1C91558E008E7C0D /* Assets.xcassets */; };
+		F4340B0F1C91558E008E7C0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4340B0D1C91558E008E7C0D /* LaunchScreen.storyboard */; };
+		F4340B1A1C91558E008E7C0D /* DCPaymentAlertSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4340B191C91558E008E7C0D /* DCPaymentAlertSwiftTests.swift */; };
+		F4340B251C91558E008E7C0D /* DCPaymentAlertSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4340B241C91558E008E7C0D /* DCPaymentAlertSwiftUITests.swift */; };
+		F4340B331C91561A008E7C0D /* DCPayAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4340B321C91561A008E7C0D /* DCPayAlertView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4340B161C91558E008E7C0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4340AF91C91558E008E7C0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4340B001C91558E008E7C0D;
+			remoteInfo = DCPaymentAlertSwift;
+		};
+		F4340B211C91558E008E7C0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4340AF91C91558E008E7C0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4340B001C91558E008E7C0D;
+			remoteInfo = DCPaymentAlertSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4340B011C91558E008E7C0D /* DCPaymentAlertSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCPaymentAlertSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4340B041C91558E008E7C0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4340B061C91558E008E7C0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4340B091C91558E008E7C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4340B0B1C91558E008E7C0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4340B0E1C91558E008E7C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4340B101C91558E008E7C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4340B151C91558E008E7C0D /* DCPaymentAlertSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCPaymentAlertSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4340B191C91558E008E7C0D /* DCPaymentAlertSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCPaymentAlertSwiftTests.swift; sourceTree = "<group>"; };
+		F4340B1B1C91558E008E7C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4340B201C91558E008E7C0D /* DCPaymentAlertSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCPaymentAlertSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4340B241C91558E008E7C0D /* DCPaymentAlertSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCPaymentAlertSwiftUITests.swift; sourceTree = "<group>"; };
+		F4340B261C91558E008E7C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4340B321C91561A008E7C0D /* DCPayAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCPayAlertView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4340AFE1C91558E008E7C0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4340B121C91558E008E7C0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4340B1D1C91558E008E7C0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4340AF81C91558E008E7C0D = {
+			isa = PBXGroup;
+			children = (
+				F4340B031C91558E008E7C0D /* DCPaymentAlertSwift */,
+				F4340B181C91558E008E7C0D /* DCPaymentAlertSwiftTests */,
+				F4340B231C91558E008E7C0D /* DCPaymentAlertSwiftUITests */,
+				F4340B021C91558E008E7C0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4340B021C91558E008E7C0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4340B011C91558E008E7C0D /* DCPaymentAlertSwift.app */,
+				F4340B151C91558E008E7C0D /* DCPaymentAlertSwiftTests.xctest */,
+				F4340B201C91558E008E7C0D /* DCPaymentAlertSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4340B031C91558E008E7C0D /* DCPaymentAlertSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F4340B321C91561A008E7C0D /* DCPayAlertView.swift */,
+				F4340B041C91558E008E7C0D /* AppDelegate.swift */,
+				F4340B061C91558E008E7C0D /* ViewController.swift */,
+				F4340B081C91558E008E7C0D /* Main.storyboard */,
+				F4340B0B1C91558E008E7C0D /* Assets.xcassets */,
+				F4340B0D1C91558E008E7C0D /* LaunchScreen.storyboard */,
+				F4340B101C91558E008E7C0D /* Info.plist */,
+			);
+			path = DCPaymentAlertSwift;
+			sourceTree = "<group>";
+		};
+		F4340B181C91558E008E7C0D /* DCPaymentAlertSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4340B191C91558E008E7C0D /* DCPaymentAlertSwiftTests.swift */,
+				F4340B1B1C91558E008E7C0D /* Info.plist */,
+			);
+			path = DCPaymentAlertSwiftTests;
+			sourceTree = "<group>";
+		};
+		F4340B231C91558E008E7C0D /* DCPaymentAlertSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4340B241C91558E008E7C0D /* DCPaymentAlertSwiftUITests.swift */,
+				F4340B261C91558E008E7C0D /* Info.plist */,
+			);
+			path = DCPaymentAlertSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4340B001C91558E008E7C0D /* DCPaymentAlertSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4340B291C91558E008E7C0D /* Build configuration list for PBXNativeTarget "DCPaymentAlertSwift" */;
+			buildPhases = (
+				F4340AFD1C91558E008E7C0D /* Sources */,
+				F4340AFE1C91558E008E7C0D /* Frameworks */,
+				F4340AFF1C91558E008E7C0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCPaymentAlertSwift;
+			productName = DCPaymentAlertSwift;
+			productReference = F4340B011C91558E008E7C0D /* DCPaymentAlertSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4340B141C91558E008E7C0D /* DCPaymentAlertSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4340B2C1C91558E008E7C0D /* Build configuration list for PBXNativeTarget "DCPaymentAlertSwiftTests" */;
+			buildPhases = (
+				F4340B111C91558E008E7C0D /* Sources */,
+				F4340B121C91558E008E7C0D /* Frameworks */,
+				F4340B131C91558E008E7C0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4340B171C91558E008E7C0D /* PBXTargetDependency */,
+			);
+			name = DCPaymentAlertSwiftTests;
+			productName = DCPaymentAlertSwiftTests;
+			productReference = F4340B151C91558E008E7C0D /* DCPaymentAlertSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4340B1F1C91558E008E7C0D /* DCPaymentAlertSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4340B2F1C91558E008E7C0D /* Build configuration list for PBXNativeTarget "DCPaymentAlertSwiftUITests" */;
+			buildPhases = (
+				F4340B1C1C91558E008E7C0D /* Sources */,
+				F4340B1D1C91558E008E7C0D /* Frameworks */,
+				F4340B1E1C91558E008E7C0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4340B221C91558E008E7C0D /* PBXTargetDependency */,
+			);
+			name = DCPaymentAlertSwiftUITests;
+			productName = DCPaymentAlertSwiftUITests;
+			productReference = F4340B201C91558E008E7C0D /* DCPaymentAlertSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4340AF91C91558E008E7C0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = dawnnnnn;
+				TargetAttributes = {
+					F4340B001C91558E008E7C0D = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					F4340B141C91558E008E7C0D = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = F4340B001C91558E008E7C0D;
+					};
+					F4340B1F1C91558E008E7C0D = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = F4340B001C91558E008E7C0D;
+					};
+				};
+			};
+			buildConfigurationList = F4340AFC1C91558E008E7C0D /* Build configuration list for PBXProject "DCPaymentAlertSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4340AF81C91558E008E7C0D;
+			productRefGroup = F4340B021C91558E008E7C0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4340B001C91558E008E7C0D /* DCPaymentAlertSwift */,
+				F4340B141C91558E008E7C0D /* DCPaymentAlertSwiftTests */,
+				F4340B1F1C91558E008E7C0D /* DCPaymentAlertSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4340AFF1C91558E008E7C0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4340B0F1C91558E008E7C0D /* LaunchScreen.storyboard in Resources */,
+				F4340B0C1C91558E008E7C0D /* Assets.xcassets in Resources */,
+				F4340B0A1C91558E008E7C0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4340B131C91558E008E7C0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4340B1E1C91558E008E7C0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4340AFD1C91558E008E7C0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4340B071C91558E008E7C0D /* ViewController.swift in Sources */,
+				F4340B051C91558E008E7C0D /* AppDelegate.swift in Sources */,
+				F4340B331C91561A008E7C0D /* DCPayAlertView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4340B111C91558E008E7C0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4340B1A1C91558E008E7C0D /* DCPaymentAlertSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4340B1C1C91558E008E7C0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4340B251C91558E008E7C0D /* DCPaymentAlertSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4340B171C91558E008E7C0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4340B001C91558E008E7C0D /* DCPaymentAlertSwift */;
+			targetProxy = F4340B161C91558E008E7C0D /* PBXContainerItemProxy */;
+		};
+		F4340B221C91558E008E7C0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4340B001C91558E008E7C0D /* DCPaymentAlertSwift */;
+			targetProxy = F4340B211C91558E008E7C0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4340B081C91558E008E7C0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4340B091C91558E008E7C0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4340B0D1C91558E008E7C0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4340B0E1C91558E008E7C0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4340B271C91558E008E7C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4340B281C91558E008E7C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4340B2A1C91558E008E7C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DCPaymentAlertSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawnnnnn.DCPaymentAlertSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F4340B2B1C91558E008E7C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DCPaymentAlertSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawnnnnn.DCPaymentAlertSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F4340B2D1C91558E008E7C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DCPaymentAlertSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawnnnnn.DCPaymentAlertSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCPaymentAlertSwift.app/DCPaymentAlertSwift";
+			};
+			name = Debug;
+		};
+		F4340B2E1C91558E008E7C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DCPaymentAlertSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawnnnnn.DCPaymentAlertSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCPaymentAlertSwift.app/DCPaymentAlertSwift";
+			};
+			name = Release;
+		};
+		F4340B301C91558E008E7C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DCPaymentAlertSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawnnnnn.DCPaymentAlertSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DCPaymentAlertSwift;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F4340B311C91558E008E7C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DCPaymentAlertSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dawnnnnn.DCPaymentAlertSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DCPaymentAlertSwift;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4340AFC1C91558E008E7C0D /* Build configuration list for PBXProject "DCPaymentAlertSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4340B271C91558E008E7C0D /* Debug */,
+				F4340B281C91558E008E7C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4340B291C91558E008E7C0D /* Build configuration list for PBXNativeTarget "DCPaymentAlertSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4340B2A1C91558E008E7C0D /* Debug */,
+				F4340B2B1C91558E008E7C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F4340B2C1C91558E008E7C0D /* Build configuration list for PBXNativeTarget "DCPaymentAlertSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4340B2D1C91558E008E7C0D /* Debug */,
+				F4340B2E1C91558E008E7C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F4340B2F1C91558E008E7C0D /* Build configuration list for PBXNativeTarget "DCPaymentAlertSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4340B301C91558E008E7C0D /* Debug */,
+				F4340B311C91558E008E7C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4340AF91C91558E008E7C0D /* Project object */;
+}
