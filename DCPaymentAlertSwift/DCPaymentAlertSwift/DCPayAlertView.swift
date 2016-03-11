@@ -8,6 +8,8 @@
 
 import UIKit
 
+typealias funcBlock = (String) -> Void
+
 class DCPayAlertView: UIView, UITextFieldDelegate {
 
     let titleHeight : CGFloat = 46.0
@@ -17,16 +19,19 @@ class DCPayAlertView: UIView, UITextFieldDelegate {
     let keyboardHeight : CGFloat = 216.0
     let keyViewDistance : CGFloat = 100.0
     let alertHeight : CGFloat = 200.0
-
-    var paymentAlert, inputWhiteView : UIView!
-    var closeBtn : UIButton!
-    var titleLabel, detailLabel, amountLabel : UILabel!
-    var pwdTextField : UITextField!
     
-    var pwdIndicatorArr : NSMutableArray!
+    var completeBlock : (((String) -> Void)?)
+    
 
+    private var paymentAlert, inputWhiteView : UIView!
+    private var closeBtn : UIButton!
+    private var titleLabel, detailLabel, amountLabel : UILabel!
+    private var pwdTextField : UITextField!
+    
+    private var pwdIndicatorArr = [UILabel]()
+    
     override init(frame: CGRect) {
-        super.init(frame: frame)
+        super.init(frame: UIScreen.mainScreen().bounds)
         self.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
         _initSubviews()
     }
@@ -47,6 +52,7 @@ class DCPayAlertView: UIView, UITextFieldDelegate {
             titleLabel.textAlignment = NSTextAlignment.Center
             titleLabel.textColor = UIColor.darkGrayColor()
             titleLabel.font = UIFont.systemFontOfSize(17)
+            titleLabel.text = "title"
             paymentAlert.addSubview(titleLabel)
             
             closeBtn = UIButton(type: UIButtonType.Custom)
@@ -65,15 +71,21 @@ class DCPayAlertView: UIView, UITextFieldDelegate {
             detailLabel.textAlignment = NSTextAlignment.Center
             detailLabel.textColor = UIColor.darkGrayColor()
             detailLabel.font = UIFont.systemFontOfSize(16)
+            detailLabel.text = "detail"
             paymentAlert.addSubview(detailLabel)
+            
+            amountLabel = UILabel(frame: CGRect(x: 15, y: titleHeight * 2, width: paymentWidth - 30, height: 25))
+            amountLabel.textAlignment = NSTextAlignment.Center
+            amountLabel.textColor = UIColor.darkGrayColor()
+            amountLabel.font = UIFont.systemFontOfSize(33)
+            amountLabel.text = "233"
+            paymentAlert.addSubview(amountLabel)
             
             inputWhiteView = UIView(frame: CGRect(x: 15, y: paymentAlert.frame.size.height - (paymentWidth - 30) / 6 - 15, width: paymentWidth - 30, height: (paymentWidth - 30) / 6))
             inputWhiteView.backgroundColor = UIColor.whiteColor()
             inputWhiteView.layer.borderColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1).CGColor
             inputWhiteView.layer.borderWidth = 1.0
             paymentAlert.addSubview(inputWhiteView)
-            
-            pwdIndicatorArr = NSMutableArray()
             
             pwdTextField = UITextField(frame: CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height))
             pwdTextField.hidden = true
@@ -90,7 +102,7 @@ class DCPayAlertView: UIView, UITextFieldDelegate {
                 dot.clipsToBounds = true
                 dot.hidden = true
                 inputWhiteView.addSubview(dot)
-                pwdIndicatorArr.addObject(dot)
+                pwdIndicatorArr.append(dot)
                 
                 if i == pwdCount - 1 {
                     continue
@@ -121,13 +133,14 @@ class DCPayAlertView: UIView, UITextFieldDelegate {
     func dismiss() {
         pwdTextField.resignFirstResponder()
         
-        UIView.animateWithDuration(0.3, animations: ({
+        UIView.animateWithDuration(0.35, animations: ({
             self.paymentAlert.transform = CGAffineTransformMakeScale(1.21, 1.21)
             self.paymentAlert.alpha = 0
             self.alpha = 0
         })) { (finishd: Bool) -> Void in
             self.removeFromSuperview()
         }
+        
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
@@ -139,16 +152,48 @@ class DCPayAlertView: UIView, UITextFieldDelegate {
             return false
         }
         
-        var totalString : NSString!
+        var totalString : String
         if string.characters.count <= 0 {
-//            totalString = textField.text?.substringToIndex(textField.text!.characters.count - 1)
+            let index = textField.text?.endIndex.advancedBy(-1)
+            totalString = textField.text!.substringToIndex(index!)
         }
         else {
             totalString = textField.text! + string
-            
+        }
+        
+        self.setDotWithCount(totalString.characters.count)
+        print("total______" + totalString)
+        
+        if totalString.characters.count == 6 {
+            print("complete")
+            completeBlock?(totalString)
+            self.dismiss()
         }
         
         return true
     }
-
+    
+    func setDotWithCount(count : NSInteger) {
+        for dot in pwdIndicatorArr {
+            dot.hidden = true
+        }
+        
+        for var i = 0; i < count; i++ {
+            pwdIndicatorArr[i].hidden = false
+        }
+    }
+    
+    func setTitle(title : String) {
+        titleLabel.text = title
+    }
+    
+    func setDetail(detail : String) {
+        detailLabel.text = detail
+    }
+    
+    func setAmount(amount : CGFloat) {
+        amountLabel.text = "\(amount)"
+    }
+    
+    
 }
