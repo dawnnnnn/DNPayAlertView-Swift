@@ -15,16 +15,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.backgroundColor = UIColor.lightGrayColor()
+        self.view.backgroundColor = UIColor.lightGray
         
         // UIButton
-        let button = UIButton(type: UIButtonType.System)
-        button.frame = CGRectMake(10, 300, 200, 50)
-        button.backgroundColor = UIColor.greenColor()
-        button.setTitle("button", forState: UIControlState.Normal)
-        button.setTitleColor(UIColor.darkGrayColor(), forState: UIControlState.Normal)
-        button.titleLabel?.font = UIFont.systemFontOfSize(18)
-        button.addTarget(self, action: "buttonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+        let button = UIButton(type: UIButtonType.system)
+        button.frame = CGRect(x: 10, y: 300, width: 200, height: 50)
+        button.backgroundColor = UIColor.green
+        button.setTitle("button", for: UIControlState())
+        button.setTitleColor(UIColor.darkGray, for: UIControlState())
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        button.addTarget(self, action: #selector(ViewController.buttonClicked(_:)), for: UIControlEvents.touchUpInside)
         self.view.addSubview(button)
     }
 
@@ -33,9 +33,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func buttonClicked(sender: UIButton) {
+    func buttonClicked(_ sender: UIButton) {
         
-        let payAlert = DCPayAlertView(frame: CGRectZero)
+        let payAlert = DCPayAlertView(frame: CGRect.zero)
         payAlert.setTitle("请输入支付密码")
         payAlert.setDetail("提现")
         payAlert.setAmount(10)
