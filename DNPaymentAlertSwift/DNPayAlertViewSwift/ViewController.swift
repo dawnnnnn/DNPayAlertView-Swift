@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  DCPaymentAlertSwift
+//  DNPayAlertViewSwift
 //
 //  Created by dawnnnnn on 16/3/10.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
 
     func buttonClicked(_ sender: UIButton) {
         
-        let payAlert = DCPayAlertView(frame: CGRect.zero)
+        let payAlert = DNPayAlertView(frame: CGRect.zero)
         payAlert.setTitle("请输入支付密码")
         payAlert.setDetail("提现")
         payAlert.setAmount(10)

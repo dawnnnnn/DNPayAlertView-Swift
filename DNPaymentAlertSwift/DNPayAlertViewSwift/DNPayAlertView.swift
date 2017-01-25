@@ -1,6 +1,6 @@
 //
-//  DCPayAlertView.swift
-//  DCPaymentAlertSwift
+//  DNPayAlertView.swift
+//  DNPayAlertViewSwift
 //
 //  Created by dawnnnnn on 16/3/10.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
@@ -34,7 +34,7 @@ fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 typealias funcBlock = (String) -> Void
 
-class DCPayAlertView: UIView, UITextFieldDelegate {
+class DNPayAlertView: UIView, UITextFieldDelegate {
 
     let titleHeight : CGFloat = 46.0
     let paymentWidth : CGFloat = UIScreen.main.bounds.size.width - 80.0
@@ -83,7 +83,7 @@ class DCPayAlertView: UIView, UITextFieldDelegate {
             closeBtn?.frame = CGRect(x: 0, y: 0, width: titleHeight, height: titleHeight)
             closeBtn?.setTitle("╳", for: UIControlState())
             closeBtn?.setTitleColor(UIColor.darkGray, for: UIControlState())
-            closeBtn?.addTarget(self, action: #selector(DCPayAlertView.dismiss), for: UIControlEvents.touchUpInside)
+            closeBtn?.addTarget(self, action: #selector(DNPayAlertView.dismiss), for: UIControlEvents.touchUpInside)
             closeBtn?.titleLabel?.font = UIFont.systemFont(ofSize: 15)
             paymentAlert.addSubview(closeBtn)
             

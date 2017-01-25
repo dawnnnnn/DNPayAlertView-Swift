@@ -1,6 +1,6 @@
 //
-//  DCPaymentAlertSwiftUITests.swift
-//  DCPaymentAlertSwiftUITests
+//  DNPayAlertViewSwiftUITests.swift
+//  DNPayAlertViewSwiftUITests
 //
 //  Created by dawnnnnn on 16/3/10.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class DCPaymentAlertSwiftUITests: XCTestCase {
+class DNPayAlertViewSwiftUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

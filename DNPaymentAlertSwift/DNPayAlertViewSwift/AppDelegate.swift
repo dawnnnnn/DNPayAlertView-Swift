@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  DCPaymentAlertSwift
+//  DNPayAlertViewSwift
 //
 //  Created by dawnnnnn on 16/3/10.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.

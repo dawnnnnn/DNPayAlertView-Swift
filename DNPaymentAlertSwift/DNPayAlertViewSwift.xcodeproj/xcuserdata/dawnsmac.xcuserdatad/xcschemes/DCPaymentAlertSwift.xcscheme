@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F4340B001C91558E008E7C0D"
-               BuildableName = "DCPaymentAlertSwift.app"
-               BlueprintName = "DCPaymentAlertSwift"
-               ReferencedContainer = "container:DCPaymentAlertSwift.xcodeproj">
+               BuildableName = "DNPayAlertViewSwift.app"
+               BlueprintName = "DNPayAlertViewSwift"
+               ReferencedContainer = "container:DNPayAlertViewSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F4340B141C91558E008E7C0D"
-               BuildableName = "DCPaymentAlertSwiftTests.xctest"
-               BlueprintName = "DCPaymentAlertSwiftTests"
-               ReferencedContainer = "container:DCPaymentAlertSwift.xcodeproj">
+               BuildableName = "DNPayAlertViewSwiftTests.xctest"
+               BlueprintName = "DNPayAlertViewSwiftTests"
+               ReferencedContainer = "container:DNPayAlertViewSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F4340B1F1C91558E008E7C0D"
-               BuildableName = "DCPaymentAlertSwiftUITests.xctest"
-               BlueprintName = "DCPaymentAlertSwiftUITests"
-               ReferencedContainer = "container:DCPaymentAlertSwift.xcodeproj">
+               BuildableName = "DNPayAlertViewSwiftUITests.xctest"
+               BlueprintName = "DNPayAlertViewSwiftUITests"
+               ReferencedContainer = "container:DNPayAlertViewSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4340B001C91558E008E7C0D"
-            BuildableName = "DCPaymentAlertSwift.app"
-            BlueprintName = "DCPaymentAlertSwift"
-            ReferencedContainer = "container:DCPaymentAlertSwift.xcodeproj">
+            BuildableName = "DNPayAlertViewSwift.app"
+            BlueprintName = "DNPayAlertViewSwift"
+            ReferencedContainer = "container:DNPayAlertViewSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4340B001C91558E008E7C0D"
-            BuildableName = "DCPaymentAlertSwift.app"
-            BlueprintName = "DCPaymentAlertSwift"
-            ReferencedContainer = "container:DCPaymentAlertSwift.xcodeproj">
+            BuildableName = "DNPayAlertViewSwift.app"
+            BlueprintName = "DNPayAlertViewSwift"
+            ReferencedContainer = "container:DNPayAlertViewSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4340B001C91558E008E7C0D"
-            BuildableName = "DCPaymentAlertSwift.app"
-            BlueprintName = "DCPaymentAlertSwift"
-            ReferencedContainer = "container:DCPaymentAlertSwift.xcodeproj">
+            BuildableName = "DNPayAlertViewSwift.app"
+            BlueprintName = "DNPayAlertViewSwift"
+            ReferencedContainer = "container:DNPayAlertViewSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
