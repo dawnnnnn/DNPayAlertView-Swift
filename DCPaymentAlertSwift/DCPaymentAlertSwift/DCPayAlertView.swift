@@ -115,6 +115,7 @@ class DCPayAlertView: UIView, UITextFieldDelegate {
             pwdTextField.isHidden = true
             pwdTextField.delegate = self
             pwdTextField.keyboardType = UIKeyboardType.numberPad
+            pwdTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .allEditingEvents)
             inputWhiteView.addSubview(pwdTextField)
             
             
@@ -157,7 +158,7 @@ class DCPayAlertView: UIView, UITextFieldDelegate {
     func dismiss() {
         pwdTextField.resignFirstResponder()
         
-        UIView.animate(withDuration: 0.35, animations: ({
+        UIView.animate(withDuration: 0.5, animations: ({
             self.paymentAlert.transform = CGAffineTransform(scaleX: 1.21, y: 1.21)
             self.paymentAlert.alpha = 0
             self.alpha = 0
@@ -195,6 +196,17 @@ class DCPayAlertView: UIView, UITextFieldDelegate {
         }
         
         return true
+    }
+    
+    func textFieldDidChange(_ textField: UITextField) {
+        // TODO:
+        /*原本想用此方法调用，奈何结束时调用了两次，不知为何..待解决*/
+//        print("total______" + textField.text!)
+//        self.setDotWithCount((textField.text?.characters.count)!)
+//        if (textField.text?.characters.count)! == pwdCount {
+//            completeBlock?(textField.text!)
+//            self.dismiss()
+//        }
     }
     
     func setDotWithCount(_ count : NSInteger) {
