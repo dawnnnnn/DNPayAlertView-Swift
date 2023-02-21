@@ -35,7 +35,7 @@ class ViewController: UIViewController {
 
     @objc func buttonClicked(_ sender: UIButton) {
         
-        let payAlert = DNPayAlertView(frame: CGRect.zero)
+        let payAlert = DNPayAlertView.show()
         payAlert.setTitle("请输入支付密码")
         payAlert.setDetail("提现")
         payAlert.setAmount(10)

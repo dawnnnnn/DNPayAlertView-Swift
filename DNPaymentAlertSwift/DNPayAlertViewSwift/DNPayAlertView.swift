@@ -64,6 +64,14 @@ class DNPayAlertView: UIView, UITextFieldDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     
+    class func show() -> DNPayAlertView {
+        let payAlert = DNPayAlertView.init()
+        payAlert.show()
+        return payAlert
+    }
+}
+
+extension DNPayAlertView {
     func _initSubviews() {
         if (paymentAlert == nil) {
             paymentAlert = UIView(frame: CGRect(x: 40, y: UIScreen.main.bounds.size.height - keyViewDistance - keyboardHeight - alertHeight, width: paymentWidth, height: alertHeight))
