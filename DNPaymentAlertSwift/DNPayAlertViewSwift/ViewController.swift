@@ -42,7 +42,6 @@ class ViewController: UIViewController {
         payAlert.completeBlock = ({(password: String) -> Void in
             print("password" + password)
         })
-        payAlert.show()
     }
 }
 
