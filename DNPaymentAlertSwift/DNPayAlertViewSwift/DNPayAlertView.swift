@@ -64,6 +64,14 @@ class DNPayAlertView: UIView, UITextFieldDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     
+    class func show() -> DNPayAlertView {
+        let payAlert = DNPayAlertView.init()
+        payAlert.show()
+        return payAlert
+    }
+}
+
+extension DNPayAlertView {
     func _initSubviews() {
         if (paymentAlert == nil) {
             paymentAlert = UIView(frame: CGRect(x: 40, y: UIScreen.main.bounds.size.height - keyViewDistance - keyboardHeight - alertHeight, width: paymentWidth, height: alertHeight))
@@ -79,11 +87,11 @@ class DNPayAlertView: UIView, UITextFieldDelegate {
             titleLabel.text = "title"
             paymentAlert.addSubview(titleLabel)
             
-            closeBtn = UIButton(type: UIButtonType.custom)
+            closeBtn = UIButton(type: .custom)
             closeBtn?.frame = CGRect(x: 0, y: 0, width: titleHeight, height: titleHeight)
-            closeBtn?.setTitle("╳", for: UIControlState())
-            closeBtn?.setTitleColor(UIColor.darkGray, for: UIControlState())
-            closeBtn?.addTarget(self, action: #selector(DNPayAlertView.dismiss), for: UIControlEvents.touchUpInside)
+            closeBtn?.setTitle("╳", for: .normal)
+            closeBtn?.setTitleColor(UIColor.darkGray, for: .normal)
+            closeBtn.addTarget(self, action: #selector(dismiss), for: .touchUpInside)
             closeBtn?.titleLabel?.font = UIFont.systemFont(ofSize: 15)
             paymentAlert.addSubview(closeBtn)
             
@@ -133,7 +141,7 @@ class DNPayAlertView: UIView, UITextFieldDelegate {
                     continue
                 }
                 let line = UILabel(frame: CGRect(x: CGFloat(i+1) * width, y: 0, width: 0.5, height: inputWhiteView.bounds.size.height))
-                line.backgroundColor = UIColor(colorLiteralRed: 0.9, green: 0.9, blue: 0.9, alpha: 1)
+                line.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
                 inputWhiteView.addSubview(line)
             }
             
@@ -147,7 +155,7 @@ class DNPayAlertView: UIView, UITextFieldDelegate {
         paymentAlert?.transform = CGAffineTransform(scaleX: 1.21, y: 1.21)
         paymentAlert?.alpha = 0
         
-        UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: UIViewAnimationOptions(), animations: ({
+        UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: UIView.AnimationOptions(), animations: ({
             self.pwdTextField.becomeFirstResponder()
             self.paymentAlert?.transform = CGAffineTransform(scaleX: 1, y: 1)
             self.paymentAlert?.alpha = 1
@@ -155,7 +163,7 @@ class DNPayAlertView: UIView, UITextFieldDelegate {
         
     }
     
-    func dismiss() {
+    @objc func dismiss() {
         pwdTextField.resignFirstResponder()
         
         UIView.animate(withDuration: 0.5, animations: ({
@@ -169,7 +177,7 @@ class DNPayAlertView: UIView, UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if ((textField.text?.characters.count >= pwdCount) && (string.characters.count > 0)) {
+        if ((textField.text?.count >= pwdCount) && (string.count > 0)) {
             return false
         }
         let predicate = NSPredicate(format: "SELF MATCHES %@","^[0-9]*$")
@@ -178,18 +186,18 @@ class DNPayAlertView: UIView, UITextFieldDelegate {
         }
         
         var totalString : String
-        if string.characters.count <= 0 {
-            let index = textField.text?.characters.index((textField.text?.endIndex)!, offsetBy: -1)
+        if string.count <= 0 {
+            let index = textField.text?.index((textField.text?.endIndex)!, offsetBy: -1)
             totalString = textField.text!.substring(to: index!)
         }
         else {
             totalString = textField.text! + string
         }
         
-        self.setDotWithCount(totalString.characters.count)
+        self.setDotWithCount(totalString.count)
         print("total______" + totalString)
         
-        if totalString.characters.count == 6 {
+        if totalString.count == 6 {
             print("complete")
             completeBlock?(totalString)
             self.dismiss()
@@ -198,7 +206,7 @@ class DNPayAlertView: UIView, UITextFieldDelegate {
         return true
     }
     
-    func textFieldDidChange(_ textField: UITextField) {
+    @objc func textFieldDidChange(_ textField: UITextField) {
         // TODO:
         /*原本想用此方法调用，奈何结束时调用了两次，不知为何..待解决*/
 //        print("total______" + textField.text!)
